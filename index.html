@@ -8,7 +8,8 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+		<link rel="stylesheet" href="./assets/css/custom-new.css" />
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +17,102 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>WELCOME!</h1>
+					Strategies for Successful Bug Hunting in Drupal Projects
+				</section>
+				<section data-state="authors">
+					<h1 class="xlarge">Ice-breaking</h1>
+					<div class="ice-breaking">
+						<article>
+						<img src="./assets/images/omarlopesino.png" width="100px" height="100px" alt="Omar Lopesino"/>
+						<h2>Omar Lopesino</h2>
+						<h3>PHP/Drupal Backend Developer</h3>
+						<h4>Tech and memes enthusiast</h4>
+						<a href="https://drupal.org/u/omarlopesino" target="_blank">drupal.org/u/omarlopesino</a>
+						</article>
+					</div>
+					<br/>
+					<a href="https://metadrop.net" target="_blank"><img src="./assets/images/metadrop-logo.svg" width="200" /></a>
+				</section>
+		  
+				<section>
+					Catch all the bugs...
+					<!--  Pokemon -->
+				</section>
+
+				<section>
+					...or do not let they happen
+				</section>
+
+				<section>
+					Why it is important fixing a bug?
+				</section>
+
+				<section>
+					User experience
+					<!-- Simpsons computer in the floor  -->
+				</section>
+
+				<section>
+					Financial
+					<!--  Money lost -->
+				</section>
+
+				<section>
+					Never-ending projects
+					<!-- Sisifus  -->
+				</section>
+
+				<section>
+					Security
+					<!-- Typical security breach  -->
+				</section>
+
+				<section>
+					Drupalgeddons
+					<!-- Drupalgeddon <img src="./assets/images/druppalgedon-2.jpg" alt="Drupalgeddon"/>  -->
+				</section>
+				
+				<section>
+					However... don't worry!
+					<!-- Kirby flower  -->
+				</section>
+
+				<section>
+					How to catch those bugs?
+				</section>
+
+				<section>
+					How to shield the site against bugs?
+					<!-- Mejorar la frase -->
+				</section>
+				<section>
+					<h1 class="xlarge">What will we see during this session?</h1>
+					<ol class="small">
+					  <li class="fragment fade-in">Global strategy to deal with bugs</li>
+					  <li class="fragment fade-in">How to detect bugs in a live Drupal site</li>
+					  <li class="fragment fade-in">Tools to find bugs: CI, Drupal modules, PHP tools</li>
+					  <li class="fragment fade-in">Debug the code</li>
+					  <li class="fragment fade-in">Bug fixing tips</li>
+					  <li class="fragment fade-in">Quality assurance: prevent regressions and future bugs</li>
+					</ol>
+				</section>
+
+				<!-- First of all: what is a bug? -->
+
+				<!-- Global strategy: asking for help, analyze the problem, explore the root of the cause, fix it (or not), ensure it does not happen again, add tests -->
+
+				<!-- How to detect bugs: Review the page often, check status report, check logs, review analytics -->
+
+				<!-- Tools to find bugs: Drupal modules, PHP tools: Continuous integration system (jenkis / gitlab CI, github), PHPStan, PHPCS, syslog, dblog, monolog, log entity operations, status report -->
+
+				<!-- Debug the code: Xdebug with netbeans phpstorm or VSCode for PHP, Chrome devtools for frontend: networking, console -->
+
+				<!-- Bug fixing tips: Think if more things are affected. Ensure the fix does not produces side effects. Don't give up on complicated bugs. Learn. -->
+
+				<!-- Quality assurance: prevent regressions and future bugs: Strategies to catch bugs before releasing: QA, CI, all the tools mentioned before, tests critical features -->
+
 			</div>
 		</div>
 
