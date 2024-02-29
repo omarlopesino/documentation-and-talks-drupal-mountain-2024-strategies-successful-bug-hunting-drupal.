@@ -87,6 +87,7 @@
 					How to shield the site against bugs?
 					<!-- Mejorar la frase -->
 				</section>
+
 				<section>
 					<h1 class="xlarge">What will we see during this session?</h1>
 					<ol class="small">
@@ -99,17 +100,156 @@
 					</ol>
 				</section>
 
-				<!-- First of all: what is a bug? -->
+				<section>
+					But... what is a bug?
+					<blockquote class="fragment fade-in">
+						A bug is an unexpected problem with software or hardware.
+					</blockquote>
+				</section>
+
+
+				<section>
+					<h1 class="xlarge">The first bug</h1>
+					<!-- Image of the first bug -->
+				</section>
+
+				<section>
+					Examples:
+					<ol class="small">
+					  <li>Page not loading</li>
+					  <li>Users can't login</li>
+					  <li>A functionality is not working as expected</li>
+					</ol>
+				</section>
+
+
+				<section>
+					¿Bug or feature?
+					<!-- Palword tweet -->
+				</section>
+
 
 				<!-- Global strategy: asking for help, analyze the problem, explore the root of the cause, fix it (or not), ensure it does not happen again, add tests -->
 
-				<!-- How to detect bugs: Review the page often, check status report, check logs, review analytics -->
+				<section>
+					<h1 class="xlarge">Global strategy to deal with bugs</h1>
+				</section>
 
-				<!-- Tools to find bugs: Drupal modules, PHP tools: Continuous integration system (jenkis / gitlab CI, github), PHPStan, PHPCS, syslog, dblog, monolog, log entity operations, status report -->
+
+				<section>
+					<h1 class="xlarge">Global strategy to deal with bugs</h1>
+					<p>Ask for help.</p>
+				</section>
+
+				<section>
+					<h1 class="xlarge">Global strategy to deal with bugs</h1>
+					<p>Analyze the problem</p>
+
+					<ul>	
+						<li class="fragment fade-in">Point out the steps to reproduce the problem.</li>
+						<li class="fragment fade-in">Go to the basics</li>
+						<li class="fragment fade-in">List the possible origins of the problem</li>
+						<li class="fragment fade-in">Check the possible solutons</li>
+						<li class="fragment fade-in">Choose long term solutions over quick fixes (if it is possible)</li>
+						<li class="fragment fade-in">Think what is the underlying problem that is causing the bug</li>
+					</ul>
+				</section>
+				<section>
+					<h1 class="xlarge">Global strategy to deal with bugs</h1>
+					<p>Don't give up</p>
+
+					<!-- imagen buscando diamantes -->
+				</section>
+
+
+				<section>
+					<h1 class="xlarge">Global strategy to deal with bugs</h1>
+
+					<p>Fix the problem</p>
+
+					<ul>	
+						<li class="fragment fade-in">Ensure bug is fixed and double check there are no side effects</li>
+						<li class="fragment fade-in">If the bug is too hard to fix, it would be good idea to refactor the feature?</li>
+						<li class="fragment fade-in">Cover the bug with a test: Behat / phpunit / cypress / nightwatch...</li>
+					</ul>
+				</section>
+
+				<!-- 
+				<section>
+					<h1 class="xlarge"> Global strategy to deal with bugs</h1>
+					Graficote de resolver bugs 
+				</section>-->
+
+
+				<section>
+					<h1 class="xlarge">How to detect the bug?</h1>
+					<!-- Espionaje -->
+				</section>
+
+				<section>
+					<h1 class="xlarge">How to detect the bug?</h1>
+					<p>Be proactive!</p>
+				</section>
+
+				<section>
+					<h1 class="xlarge">How to detect the bug?</h1>
+					<p>Review the page often... <span class="fragment fade-in"> or prepare periodic smoke tests.</span></p>
+				</section>
+
+				<section>
+					<h1 class="xlarge">How to detect the bug?</h1>
+					<p>Check status report</p>
+					<!-- Show Drupal status report -->
+				</section>
+
+				<section>
+					<h1 class="xlarge">How to detect the bug?</h1>
+					<p>Check logs</p>
+					<!-- Show Drupal Recent log messages -->
+				</section>
+
+				<section>
+					<h1 class="xlarge">How to detect the bug?</h1>
+					<p>Review analytics</p>
+					<!-- Show typical analytics page -->
+				</section>
+
+				<section>
+					<h1 class="xlarge">How to detect the bug?</h1>
+					<p>Smoke tests</p>
+				</section>
+
+				<section>
+					<h1 class="xlarge">Tools to find bugs</h1>
+					<p>Drupal modules to vew logs</p>
+					<ul class="fragment fade-in">
+						<li>Syslog</li>
+						<li>Watchdog</li>
+						<li>Monolog</li>
+						<li>DBLog filter</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1 class="xlarge">Tools to find bugs</h1>
+					<p>Log entity operations</p>
+				</section>
+
+				<section>
+					<h1 class="xlarge">Tools to find bugs</h1>
+					<p>Review content revisions</p>
+				</section>
+
+				<section>
+					<h1 class="xlarge">Tools to find bugs</h1>
+					<p>PHP static analysis tools</p>
+					<ul class="fragment fade-in">
+						<li>PHPStan</li>
+						<li>PHP code sniffer (phpcs)</li>
+					</ul>
+				</section>
 
 				<!-- Debug the code: Xdebug with netbeans phpstorm or VSCode for PHP, Chrome devtools for frontend: networking, console -->
-
-				<!-- Bug fixing tips: Think if more things are affected. Ensure the fix does not produces side effects. Don't give up on complicated bugs. Learn. -->
 
 				<!-- Quality assurance: prevent regressions and future bugs: Strategies to catch bugs before releasing: QA, CI, all the tools mentioned before, tests critical features -->
 
