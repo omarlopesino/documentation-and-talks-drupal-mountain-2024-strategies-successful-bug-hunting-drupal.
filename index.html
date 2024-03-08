@@ -101,6 +101,12 @@
 					</ol>
 				</section>
 
+
+				<section>
+					<h1 class="xlarge">Example</h1>
+					<img src="assets/images/unexpected-error.png">>
+				</section>
+
 				<section>
 					<h1 class="xlarge">The Strategy</h1>
 					<img src="assets/images/strategy-bug-solvng.png">
@@ -193,26 +199,19 @@
 					<h1 class="xlarge">Bug hunting methodology</h1>
 					<h2>Bug dealing</h2>
 					<ul class="small">	
-						<li class="fragment fade-in">Point out the <strong>steps to reproduce</strong> the problem.</li>
-						<li class="fragment fade-in">Go to the <strong>basics</strong></li>
-						<li class="fragment fade-in">Think what is the <strong>underlying problem</strong> that is causing the bug</li>
-						<li class="fragment fade-in">Choose the most appropiate <strong>solution</strong>: choose long term solutions over quick fixes</li>
-						<li class="fragment fade-in">Cover the bug with <strong>tests</strong></li>
+						<li>Point out the <strong>steps to reproduce</strong> the problem.</li>
+						<li>Go to the <strong>basics</strong></li>
+						<li>Think what is the <strong>underlying problem</strong> that is causing the bug</li>
+						<li>Choose the most appropiate <strong>solution</strong>: choose long term solutions over quick fixes</li>
+						<li>Cover the bug with <strong>tests</strong></li>
 					</ul>
 				</section>
 
 				<section>
 					<h1 class="xlarge">Tools</h1>
 					<h2>Logging Drupal modules</h2>
-					<ul class="fragment fade-in">
+					<ul>
 						<li>Syslog</li>
-					</ul>
-				</section>
-
-				<section>
-					<h1 class="xlarge">Tools</h1>
-					<h2>Logging Drupal modules</h2>
-					<ul class="fragment fade-in">
 						<li>DB Log</li>
 						<li>DBLog filter</li>
 					</ul>
@@ -237,21 +236,38 @@
 					<h1 class="xlarge">Tools</h1>
 					<h2>Logging Drupal modules</h2>
 					<p>Log entity operations</p>
+					<img src="assets/images/log-entity-operations.png">
+				</section>
+
+				<section>
+					<h1 class="xlarge">Tools</h1>
+					<h2>Logging Drupal modules</h2>
+					<p>Log entity operations</p>
+					<img src="assets/images/log-entity-operations-view.png">
 				</section>
 
 				<section>
 					<h1 class="xlarge">Tools</h1>
 					<p>Content revisions</p>
+					<img src="assets/images/revisions.png">
 				</section>
 
 				<section>
 					<h1 class="xlarge">Tools</h1>
 					<h2>PHP static analysis tools</h2>
-					<ul class="fragment fade-in">
+					<ul>
 						<li>PHPStan</li>
-						<li>PHP code sniffer (phpcs)</li>
+						<li>PHP code sniffer (PHPcs)</li>
+						<li>PHP mess detector (PHPmd)</li>
 					</ul>
-					<!-- @todo examples -->
+				</section>
+
+
+				<section>
+					<h1 class="xlarge">Tools</h1>
+					<h2>PHP static analysis tools</h2>
+					<p>Example with PHPStan</p>
+					<img src="assets/images/phpstan-report.png">
 				</section>
 
 				<section>
@@ -299,31 +315,29 @@
 				<section>
 					<h1 class="xlarge">Quality assurance (QA)</h1>
 					<p>Pair code review through Pull / Merge requests </p>
-					<!-- Some funny QA picture-->
+					<img src="assets/images/merge-request.svg" width="400" height="400">
 				</section>
 
 				<section>
 					<h1 class="xlarge">Quality assurance (QA)</h1>
 					<p>Manual review of the new functionalities</p>
-					<!-- Some funny QA picture-->
+					<img src="assets/images/testing.gif">
 				</section>
 				<section>
 					<h1 class="xlarge">Quality assurance (QA)</h1>
-					<p>Try breaking the code!</p>
+					<p>Try breaking the feature!</p>
 					<!-- Some funny QA picture-->
-				</section>
-				<section>
-					<h1 class="xlarge">Quality assurance (QA)</h1>
-					<p>Continuous integration</p>
-					
-					<!-- Jenkins / GItlab CI / PHP -->
 				</section>
 
 				<section>
 					<h1 class="xlarge">Quality assurance (QA)</h1>
-					<p>Static analysis tools</p>
+					<p>Static analysis</p>
 					
-					<!-- Jenkins / GItlab CI / PHP -->
+					<ul>
+						<li>PHPStan</li>
+						<li>PHP code sniffer (PHPcs)</li>
+						<li>PHP mess detector (PHPmd)</li>
+					</ul>
 				</section>
 
 
@@ -337,7 +351,15 @@
 						<li>Regression tests</li>
 					</ul>
 				</section>
-				<!-- Quality assurance: prevent regressions and future bugs: Strategies to catch bugs before releasing: QA, CI, all the tools mentioned before, tests critical features -->
+
+				<section>
+					<h1 class="xlarge">Quality assurance (QA)</h1>
+					<ul>
+						<li>Gitlab CI</li>
+						<li>GIthub CI</li>
+						<li>Jenkins</li>
+					</ul>
+				</section>
 
 				<section data-state="chapter">
 					<h1>Questions?</h1>
