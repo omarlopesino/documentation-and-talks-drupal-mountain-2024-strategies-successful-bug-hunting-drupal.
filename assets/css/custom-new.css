@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #ff0000;
+  --color-primary: #0e2d40;
   --color-secondary: #2a6b8b;
   --color-tertiary: #009cde;
 }
@@ -31,6 +31,7 @@ header {
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   text-transform: none;
   font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .reveal h1 {
@@ -45,11 +46,11 @@ header {
   font-size: 1.5em;
 }
 
-.reveal section .large {
+.reveal section .large, .reveal h2 {
   font-size: 1.2em;
 }
 
-.reveal section .small {
+.reveal section .small, .reveal p, .reveal li {
   font-size: 0.8em;
 }
 
